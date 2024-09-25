@@ -123,11 +123,22 @@ function addToCart(name, price) {
   cartCount++;
   subTotal = subTotal + price;
   const cartCountContainer = document.getElementById("cart-count");
-  const cartTotalContainer = document.getElementById("cart-total");
   const subTotalContainer = document.getElementById("sub-total");
   cartCountContainer.innerText = cartCount;
-  cartTotalContainer.innerText = cartCount;
   subTotalContainer.innerText = subTotal;
+  document.getElementById('item-with-price').classList.remove('hidden');
+  document.getElementById('no-item').classList.add('hidden');
+  
+  
+
+  const p = document.createElement('p');
+  p.classList.add('mb-2');
+  p.innerHTML = `
+  <p> Item ${cartCount} Price: ${price}৳</p>
+  `
+
+  document.getElementById('single-item-price').append(p);
+
   my_modal_1.showModal().showModal;
 }
 displayProducts();

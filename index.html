@@ -91,14 +91,13 @@
                 class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
               >
                 <div class="card-body">
-                  <span class="text-lg font-bold"
-                    ><span id="cart-total">0</span> Items Added</span
+                  <span id="no-item" class="text-lg font-bold text-primary-color"
+                    > No Item To Show</span
                   >
-                  <div class="hidden">
+                  <div id="item-with-price" class="hidden">
                     <div class="flex flex-col gap-2">
-                      <div class="flex justify-between text-primary-color">
-                        <span id="single-item-price">Item 1 Price: </span>
-                        <span id="single-item-price"> 0 ৳ </span>
+                      <div id="single-item-price" class="text-primary-color flex flex-col justify-between">
+                        
                       </div>
                       <div class="flex justify-between text-primary-color">
                         <span>Subtotal:</span>
@@ -175,10 +174,19 @@
         </h1>
 
         <!-- Products -->
-        <div
+        <div class="flex flex-col">
+          <div
           id="products"
           class="grid justify-center lg:grid-cols-3 gap-5 mt-6"
         ></div>
+        <div class="join mt-10  mx-auto">
+          <button class="join-item btn btn-lg text-white bg-primary-color">1</button>
+          <button class="join-item btn btn-lg ">2</button>
+          <button class="join-item btn btn-lg">3</button>
+          <button class="join-item btn btn-lg">4</button>
+          <button class="join-item btn btn-lg">Next</button>
+        </div>
+        </div>
       </section>
     </main>
 

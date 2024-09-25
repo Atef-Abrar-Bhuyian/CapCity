@@ -19,21 +19,13 @@
       type="image/x-icon"
     />
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    
 
     <title>CapCity</title>
 
     <!-- Style CSS -->
     <style>
-      .montserrat-font {
-        font-family: "Montserrat", sans-serif;
-      }
+      
     </style>
 
     <!-- Tailwind Script -->
@@ -54,7 +46,7 @@
   </head>
 
   <!-- icon =https://img.icons8.com/?size=100&id=wdwLFtw3Nu2p&format=png&color=000000 -->
-  <body class="montserrat-font">
+  <body class="font-mono">
     <header class="bg-primary-color sticky top-0 z-10">
       <div class="md:w-11/12 mx-auto ">
         <div class="navbar bg-primary-color">
@@ -96,7 +88,7 @@
                   >
                   <div id="item-with-price" class="hidden">
                     <div class="flex flex-col gap-2">
-                      <div id="single-item-price" class="text-primary-color flex flex-col justify-between">
+                      <div id="single-item-price" class="text-primary-color">
                         
                       </div>
                       <div class="flex justify-between text-primary-color">
@@ -145,7 +137,39 @@
       </div>
     </header>
 
-    <main class="my-12">
+    <main class="my-4">
+      <section class="mb-4">
+        <div class="flex justify-center items-center gap-10">
+          <h1 class="text-[#205043] text-2xl font-bold font-mono">Don't Miss Out! Flash Sales Are About to Start!</h1>
+          <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:${counter};"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+
+      </section>
       <section class="w-full">
         <img src="assets/hero-section.jpg" alt="">
       </section>

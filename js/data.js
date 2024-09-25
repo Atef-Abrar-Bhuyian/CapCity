@@ -91,7 +91,7 @@ function displayProducts() {
 
     card.innerHTML = `
 
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card bg-base-100 w-96 shadow-xl h-full">
   <figure class="">
     <img
       src="${item.img}"

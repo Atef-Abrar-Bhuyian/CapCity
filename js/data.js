@@ -111,7 +111,7 @@ function displayProducts() {
                   <div class="card-actions justify-end">
       <button onclick="addToCart('${item.Name}', ${
       item.details.price
-    })" class="btn bg-primary-color hover:bg-white hover:text-primary-color">Buy Now</button>
+    })" class="btn bg-[#025043] text-white hover:bg-white hover:text-primary-color">Add to Cart</button>
     </div>
             </div>
         `;

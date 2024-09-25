@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- DaisyUI and Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=100&id=wdwLFtw3Nu2p&format=png&color=000000"
+      type="image/x-icon"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>CapCity</title>
+
+    <!-- Style CSS -->
+    <style>
+      .montserrat-font {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+
+    <!-- Tailwind Script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#008080",
+              "cream-color": "#FFFDD0",
+              "coral-color": "#FF7F50",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <!-- icon =https://img.icons8.com/?size=100&id=wdwLFtw3Nu2p&format=png&color=000000 -->
+  <body class="montserrat-font">
+    <header class="bg-primary-color min-h-20">
+      <div class="md:w-11/12 mx-auto">
+        <div class="navbar bg-primary-color">
+          <div class="flex-1">
+            <a class="btn btn-ghost text-xl font-bold text-cream-color hover:">
+              Cap.City</a
+            >
+          </div>
+          <div class="flex-none">
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <div class="indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  <span id="cart-count" class="badge badge-sm indicator-item"
+                    >0</span
+                  >
+                </div>
+              </div>
+              <div
+                tabindex="0"
+                class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+              >
+                <div class="card-body">
+                  <span class="text-lg font-bold"
+                    ><span id="cart-total">0</span> Items Added</span
+                  >
+                  <span class="text-info"
+                    >Subtotal: <span id="sub-total">0</span> ৳</span
+                  >
+                  <div class="card-actions">
+                    <button class="btn btn-primary btn-block">View cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown dropdown-end">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost btn-circle avatar"
+              >
+                <div class="w-10 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  />
+                </div>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <a class="justify-between">
+                    Profile
+                    <span class="badge">New</span>
+                  </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="my-12 w-11/12 mx-auto">
+      <section>
+        <h1 class="text-4xl animate-pulse font-extrabold text-center">
+          Our Latest Products
+        </h1>
+
+        <!-- Products -->
+        <div
+          id="products"
+          class="grid justify-center lg:grid-cols-3 gap-5 mt-6"
+        ></div>
+      </section>
+    </main>
+
+    <footer class="footer bg-primary-color text-cream-color font-bold p-10">
+      <div class="flex">
+        <img
+          class="w-10  cursor-pointer"
+          src="https://img.icons8.com/?size=100&id=wdwLFtw3Nu2p&format=png&color=000000"
+          alt=""
+        />
+        <h1 class="text-3xl">Cap.City</h1>
+      </div>
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      
+    </footer>
+
+    <!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg text-center font-bold">Item Added To Your Cart</h3>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+
+    <script src="js/data.js"></script>
+  </body>
+</html>

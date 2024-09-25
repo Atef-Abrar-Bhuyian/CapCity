@@ -4,7 +4,7 @@ const products = [
     Name: "HEAD GEAR BLACK & CYAN SUPER SUEDE CAP",
     img: "./assets/1st.jpg",
     details: {
-      price: "100",
+      price: "700",
       stock: "available",
       brand: "NY",
     },
@@ -14,7 +14,7 @@ const products = [
     Name: "HEAD GEAR CHOCOLATE COLOR SUPER SUEDE CAP",
     img: "./assets/2.jpg",
     details: {
-      price: "100",
+      price: "550",
       stock: "available",
       brand: "NY",
     },
@@ -24,7 +24,7 @@ const products = [
     Name: "HEAD GEAR WHITE COLOR SUPER SUEDE CAP",
     img: "./assets/3.jpg",
     details: {
-      price: "100",
+      price: "800",
       stock: "available",
       brand: "NY",
     },
@@ -34,7 +34,7 @@ const products = [
     Name: "HEAD GEAR SUPER SUEDE CAP",
     img: "./assets/4.jpg",
     details: {
-      price: "100",
+      price: "950",
       stock: "available",
       brand: "NY",
     },
@@ -44,7 +44,17 @@ const products = [
     Name: "HEAD GEAR NEW SUPER SUEDE CAP",
     img: "./assets/5.jpg",
     details: {
-      price: "100",
+      price: "650",
+      stock: "available",
+      brand: "NY",
+    },
+  },
+  {
+    category: "Cap",
+    Name: "HEAD GEAR LATEST SUPER SUEDE CAP",
+    img: "./assets/7.jpg",
+    details: {
+      price: "900",
       stock: "available",
       brand: "NY",
     },
@@ -54,7 +64,7 @@ const products = [
     Name: "HEAD GEAR LATEST SUPER SUEDE CAP",
     img: "./assets/6.jpg",
     details: {
-      price: "100",
+      price: "500",
       stock: "available",
       brand: "NY",
     },
@@ -64,7 +74,7 @@ const products = [
     Name: "HEAD GEAR RED SUPER SUEDE CAP",
     img: "./assets/8.jpg",
     details: {
-      price: "100",
+      price: "800",
       stock: "available",
       brand: "NY",
     },
@@ -101,7 +111,7 @@ function displayProducts() {
                   <div class="card-actions justify-end">
       <button onclick="addToCart('${item.Name}', ${
       item.details.price
-    })" class="btn bg-primary-color">Buy Now</button>
+    })" class="btn bg-primary-color hover:bg-white hover:text-primary-color">Buy Now</button>
     </div>
             </div>
         `;

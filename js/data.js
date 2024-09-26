@@ -139,6 +139,16 @@ function addToCart(name, price) {
 
   document.getElementById('single-item-price').append(p);
 
-  my_modal_1.showModal().showModal;
+  my_modal_1.showModal();
 }
+
+const num = 59;
+function counter(){
+
+const timerSet = document.getElementById('timer')
+timerSet.innerText = 59;
+
+}
+
+
 displayProducts();

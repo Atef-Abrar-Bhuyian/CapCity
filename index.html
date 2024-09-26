@@ -48,7 +48,7 @@
   <!-- icon =https://img.icons8.com/?size=100&id=wdwLFtw3Nu2p&format=png&color=000000 -->
   <body class="font-mono">
     <header class="bg-primary-color sticky top-0 z-10">
-      <div class="md:w-11/12 mx-auto ">
+      <div class="md:w-11/12 mx-auto">
         <div class="navbar bg-primary-color">
           <div class="flex-1">
             <img
@@ -167,7 +167,7 @@
             </div>
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value:${counter};"></span>
+                <span id="timer" style="--value:${counter};"></span>
               </span>
               sec
             </div>
@@ -197,8 +197,8 @@
       </section>
 
 
-      <section class="w-11/12 mx-auto mt-14">
-        <h1 class="text-4xl animate-pulse font-extrabold text-center text-[#025043]">
+      <section id="products-section"  class="w-11/12 mx-auto mt-14">
+        <h1  class="text-4xl animate-pulse font-extrabold text-center text-[#025043]">
           Latest Release!
         </h1>
 
@@ -229,7 +229,7 @@
       <p class="mb-5 text-white font-bold">
         Cap.city is your one-stop destination for the trendiest and most stylish caps, perfect for every occasion. Discover our latest collection and step up your headwear game with Cap.City!
       </p>
-      <button class="btn bg-[#205043] font-light text-white hover:bg-transparent border border-primary-color hover:border hover:border-primary-color">Shop Now</button>
+      <button class="btn bg-[#205043] font-light text-white hover:bg-transparent border border-primary-color hover:border hover:border-primary-color"><a href="#products-section">Shop Now</a></button>
     </div>
   </div>
 </div>
